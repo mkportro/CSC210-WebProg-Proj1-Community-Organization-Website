@@ -1,0 +1,38 @@
+[
+    {
+      "title": "Senior Happy Hour",
+      "location": "Hirst Lounge, WilCo",
+      "date": "02/16/23",
+      "time": "5pm",
+      "description": "Come join the 2023 Class Council for our second Spring Happy Hour! Food and cash bar will be provided."
+    },
+    {
+        "title": "Medallion Program: The Practices of Leadership (Level 2 Opener)",
+        "location": "Genesee 325",
+        "date": "02/17/23",
+        "time": "3pm",
+        "description": "During this session you will complete the Leadership Practices Inventory to understand your unique leadership style and how it can benefit your organizations. We’ll also discuss how leaders work collaboratively to help a group succeed. Presented by Alexys Gayne, Medallion Society Member."
+    },
+      {
+        "title": "Birdwatching in Mt. Hope Cemetery",
+        "location": "Mt. Hope Cemetery",
+        "date": "02/18/23",
+        "time": "2pm",
+        "description": "Come join the Birding Club for our first-ever outing! We will be walking through Mt. Hope cemetery to familiarize ourselves with birds in the Rochester area. Bring your binoculars and field guides!"
+      },
+      {
+        "title": "Interfaith Hindu Puja for Maha Shivarathri",
+        "location": "Hindu Temple of Rochester",
+        "date": "02/18/23",
+        "time": "6:15pm",
+        "description": "We will be meeting in front of Rush Rhees at 6:15pm with a planned departure from campus at 6:30pm. We plan to arrive at 7pm which is when certain prayers and pujas will start. This will be an interfaith trip and folks of all backgrounds are welcome to come and learn and observe! Limited spots are available, so please register. Hosted by Students’ Association for Interfaith Cooperation."
+      },
+      {
+        "title": "Keeping the Culture Alive: Uyghur Cooking",
+        "location": "Douglass Community Kitchen",
+        "date": "02/19/23",
+        "time": "1pm",
+        "description": "Come join us for a fun event that keeps Uyghur culture alive! We will be making two classic Uyghur/Central Asian dishes: Samsa (meat pie) and Pichene (cut cookie) for dessert! Stop by at any time! Hosted by Movement for Uyghur Freedom."
+      }
+  ]
+  

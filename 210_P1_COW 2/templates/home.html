@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <header>
+        <nav>
+            <ul class="nav nav-pills bg-light">
+                {% if current_user.is_authenticated %}
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('profile') }}">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('logout') }}">Logout</a></li>
+                {% else %}
+                <li class="nav-item"><a class="nav-link active" href="{{ url_for('home') }}">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('login') }}">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('signup') }}">Sign Up</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="p-3">Upcoming University of Rochester Events</h1>
+    
+    <div class="ml-3">
+        {% for event in events %}
+        <div class="card">
+            <div class="card-header bg-warning text-dark">{{ event.title }}</div>
+            <div class="card-body">
+                <h5 class="card-title">{{ event.date }} -- {{ event.time }}</h5>
+                <h5 class="card-title">{{ event.location }}</h5>
+                <p class="card-text">{{ event.description }}</p>
+                
+                {% if current_user.is_authenticated %}
+                    {% if event in current_user.events %}
+                        <p>You have registered for this event</p>
+                        <a href="{{ url_for('delete_event', event_id=event.id) }}" class="btn btn-outline-danger">Delete Registration</a>
+                    {% else %}
+                    <a href="{{ url_for('register_event', event_id=event.id)}}" class="btn btn-outline-success">Register for Event</a>
+                    {% endif %}
+                {% else %}
+                    <a href="{{ url_for('login') }}" class="btn btn-link">Login to Register</a>
+                {% endif %}
+            </div>
+      </div>
+      <br>
+      {% endfor %}
+    </div>
+{% endblock %}
